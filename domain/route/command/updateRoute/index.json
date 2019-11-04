@@ -1,0 +1,38 @@
+{
+  "title": "updateRoute",
+  "type": "object",
+  "version": 1,
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "aggregate": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "number"
+        }
+      },
+      "required": ["name", "id", "revision"]
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "seats": {
+          "type": "number"
+        }
+      },
+      "required": ["seats"]
+    }
+  },
+  "required": ["id", "name", "aggregate", "payload"]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "augmented-cqrs-example-domain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "augmented-cqrs": "git+https://gitlab+deploy-token-49112:kb4pboYhuSbSid1GyyJF@gitlab.com/raka.moviz/augmented-cqrs.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

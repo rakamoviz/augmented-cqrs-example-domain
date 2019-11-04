@@ -1,0 +1,41 @@
+{
+  "title": "open",
+  "type": "object",
+  "version": 1,
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "aggregate": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "number"
+        }
+      },
+      "required": ["name", "id", "revision"]
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "owner": {
+          "type": "string"
+        },
+        "initialBalance": {
+          "type": "number"
+        }
+      },
+      "required": ["owner", "initialBalance"]
+    }
+  },
+  "required": ["id", "name", "aggregate", "payload"]
+}
